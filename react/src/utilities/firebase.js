@@ -3,10 +3,10 @@ import { getFirestore, collection, doc, setDoc, getDoc, getDocs, updateDoc, arra
 import { getDatabase, onValue, update } from 'firebase/database';
 import React, { useState, useEffect } from 'react';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import { getAuth} from 'firebase/auth'
+import { getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD5Y7aH2VhUwYzbdcWM3BOvuoEYVopqGFE",
+    apiKey: "",
     authDomain: "wildcat-spotlight.firebaseapp.com",
     databaseURL: "https://wildcat-spotlight-default-rtdb.firebaseio.com",
     projectId: "wildcat-spotlight",
