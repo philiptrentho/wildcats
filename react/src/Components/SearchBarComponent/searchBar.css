@@ -1,0 +1,17 @@
+.categoryHolder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline: 8px;
+    scrollbar-width: none;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 450px; /* or another fixed width */
+    touch-action: pan-x;
+    margin-top: 20px;
+}
+
+.categoryHolder::-webkit-scrollbar {
+    display: none;  /* For Chrome, Safari, and Opera */
+}

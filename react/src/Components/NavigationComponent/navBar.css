@@ -1,0 +1,33 @@
+.icon-with-shape {
+  position: relative;
+  display: inline-block; /* Or flex, depending on your layout needs */
+  align-items: center;
+}
+
+.white-shape {
+  position: absolute;
+  bottom: 10px; /* Adjust this value to position the shape below the icon */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the shape horizontally */
+  width: 30px; /* Size of the shape */
+  height: 30px;
+  background-color: white;
+  border-radius: 50%; /* Makes the shape a circle */
+  z-index: -2;
+}
+
+.addButton{
+  cursor: pointer;
+    font-size: 40px;
+    color: #4a43ec;
+}
+
+.addButtonDisabled{
+  cursor: pointer;
+    font-size: 40px;
+    color: gray;
+}
+
+.nav-bar-hidden {
+  display: none
+}

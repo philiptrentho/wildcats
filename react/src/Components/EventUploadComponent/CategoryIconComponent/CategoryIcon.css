@@ -1,0 +1,15 @@
+ .icon-style {
+    width: 25px;
+    height: 25px;
+  }
+  .button-selected {
+    color: white;
+    background-color: #5669FF; /* Your selected color */
+  }
+  
+  .button-not-selected {
+    color: #b6b6b6;
+    background-color: white; /* Your not-selected color */
+    border-color: #b6b6b6;;
+  }
+  

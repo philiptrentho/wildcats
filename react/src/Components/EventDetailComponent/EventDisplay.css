@@ -1,0 +1,216 @@
+.event-display-container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 500px; /* Set a max-width for large screens */
+    overflow: hidden;
+    font-family: 'ABeeZee', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This ensures the header and footer are at the ends */
+    height: 95vh; /* Use the full screen height */
+  
+  }
+  
+  .event-image {
+    width: 100%;
+    display: block;
+  }
+  
+  .event-info {
+    padding: 17px;
+  }
+  
+  .event-title {
+    color: #2d3436; /* Dark gray */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .event-desc {
+    color: #636e72; /* Medium gray */
+    font-size: 15px;
+    padding-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  .event-detail {
+    color: #2d3436;
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .event-org {
+    color: #4a43ec; /* Purple similar to the theme from the image */
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    font-style: italic;
+    font-family: 'ABeeZee', sans-serif;
+  }
+  
+  .event-org::before {
+    content: 'Organized by ';
+    color: #b2bec3; /* Light gray */
+    font-size: 14px;
+  }
+  .event-actions {
+    padding-left: 17px;
+    padding-right: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .tickets-div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 12px;
+    background-color: #4a43ec; 
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'ABeeZee', sans-serif;
+    width: 120px;
+}
+
+.tickets-div a {
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+}
+
+  
+  
+  .count-button {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color */
+    border: 2px solid #ccc; /* Gray border */
+    border-radius: 50%; /* Fully round edges */
+    width: 30px; /* Fixed width */
+    height: 30px; /* Fixed height to match the width */
+    padding: 0; /* Reset padding to better control size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; /* Adjust spacing as needed */
+    font-size: 20px; /* Adjust font size as needed */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  }
+  
+  .count-button:disabled {
+    border-color: #eee; /* Lighter border for disabled state */
+    color: #aaa; /* Lighter text color for disabled state */
+    cursor: not-allowed;
+    box-shadow: none; /* No shadow for disabled state */
+  }
+  
+  
+  .attendee-count {
+    min-width: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #2d3436; /* Dark gray */
+  }
+
+  .tickets-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tickets-label {
+    font-size: 16px;
+    color: #333; /* Dark text color */
+    margin-bottom: 8px; /* Spacing between the label and the counter */
+    font-weight: bold;
+  }
+  
+  /* Add responsive breakpoints as necessary */
+  @media (max-width: 768px) {
+    .event-display-container {
+      margin: 10px;
+    }
+  
+    .event-info {
+      padding: 17px;
+    }
+  
+    .event-title {
+      font-size: 17px;
+    }
+  
+    .event-desc,
+    .event-detail {
+      font-size: 10px;
+    }
+    
+  }
+  
+  .attending-div{
+    display: flex;
+
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .attending-count{ 
+    font-size: 20px;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: bold;
+    margin-right: 5px;
+    color: #4a43ec;
+  }
+
+  .attending-text{
+    font-size: 15px;
+    font-family: 'ABeeZee', sans-serif;
+    color: #4a43ec;
+
+    position: relative;
+    bottom: 2px; 
+
+  }
+
+  .attending-button-no{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: #4a43ec;
+    border-radius: 15px;
+    background-color: white;
+    font-family: 'ABeeZee', sans-serif;
+    margin-left: 60px;
+
+  }
+
+  .attending-button-yes{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: #4a43ec;
+    border-radius: 15px;
+    background-color: #4a43ec;;
+    font-family: 'ABeeZee', sans-serif;
+    margin-left: 60px;
+    color: white;
+
+  }

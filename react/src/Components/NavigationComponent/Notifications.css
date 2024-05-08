@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Sedan:ital@0;1&display=swap');
+
+.Noti-event-card-container {
+    font-family: 'ABeeZee', sans-serif;
+    display: flex;
+    margin: 0 auto 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f0f0f0; 
+    width: 95%;
+    max-height: 150px; 
+}
+
+.Noti-title {
+    display: flex;
+    font-size: 25px;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: bold;
+    align-items: start;
+} 
+
+.Noti-event-image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+.Noti-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   
+    overflow-y: auto; 
+    margin-bottom: 90px;
+}
+.Noti-event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Noti-date-title{
+    display: flex;
+    font-size: 20px;
+    font-family: 'ABeeZee', sans-serif;
+    /* font-weight: bold; */
+    text-decoration: underline;
+    align-items: start;
+}
+
+.Noti-event-details {
+    flex: 1; 
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto; 
+}
+
+.Noti-event-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.Noti-org-name {
+    font-size: 15px;
+    font-style: italic;
+}
+.Noti-event-time {
+    margin-bottom: 10px;
+}
+
+.Noti-event-description {
+    font-size: 16px;
+}
+
+
+.Noti-event-card:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.loading-wheel {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #7986cb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
